@@ -100,13 +100,13 @@
     <script>
         function updateOrientationWarning() {
             const body = document.body;
-            if (window.innerWidth > window.innerHeight) {
-                // Landscape: hiển thị cảnh báo
+           if (window.innerHeight > window.innerWidth) {
+                // Portrait: hiển thị cảnh báo
                 body.classList.add('landscape-warning-active');
-            } else {
-                // Portrait: ẩn cảnh báo
+              } else {
+                // Landscape: ẩn cảnh báo
                 body.classList.remove('landscape-warning-active');
-            }
+              }
         }
 
         // Kiểm tra khi tải trang
